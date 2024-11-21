@@ -1,0 +1,25 @@
+<div class="cabeza" >
+    <h3>FRIENDS</h3>
+    <div>
+        <a href="feed">INICIO</a>
+        <a href="profile">PERFIL</a>
+        <a href="">SALIR</a>
+    </div>
+</div>
+<div class="seccion1">
+    <img [src]="userProfile.avatar" alt="">
+    <p>{{ userProfile.nombre }}</p>
+  <p>{{ userProfile.username }}</p>
+</div>
+
+
+    <div class="seccion2">
+        <div class="card" *ngFor="let post of userPosts">
+            <div class="cardSeccionArriba">
+              <!-- <button (click)="editPost(post._id)">Editar</button> -->
+              <button (click)="deletePost(post._id)">Borrar</button>
+            </div>
+            <p>{{ post.texto }}</p>
+            <p>Publicado por: {{ post.username }}</p>
+          </div>
+    </div>

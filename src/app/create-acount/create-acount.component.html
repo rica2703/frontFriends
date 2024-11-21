@@ -1,0 +1,25 @@
+<div class="cabeza">
+    <h3>FRIENDS</h3>
+</div>
+<div class="contenedor">
+    <div class="formulario">
+        <input type="text" placeholder="USUARIO" [(ngModel)]="user.username">
+        <input type="password" placeholder="CONTRASEÑA" [(ngModel)]="user.password">
+        <input type="text" placeholder="NOMBRE COMPLETO" [(ngModel)]="user.nombre">
+        <button (click)="onSignup()">CREAR CUENTA</button>
+        <button (click)="onSignin()">INICIAR SESION</button>
+    </div>
+    <div class="avatar">
+        <h2>SELECCIONA TU AVATAR</h2>
+        <div>
+            <button class="av1" (click)="av1()"></button>
+            <button class="av2" (click)="av2()"></button>
+            <button class="av3" (click)="av3()"></button>
+        </div>
+        <div>
+            <button class="av4" (click)="av4()"></button>
+            <button class="av5" (click)="av5()"></button>
+            <button class="av6" (click)="av6()"></button>
+        </div>
+    </div>
+</div>

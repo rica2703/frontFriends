@@ -1,0 +1,71 @@
+.cabeza{
+    background-color: rgb(209, 209, 209);
+    width: 100%;
+    height: auto;
+    margin-bottom: -1.1%;
+}
+.contenedor{
+    display: flex;
+    width: 100%;
+}
+.formulario{
+    width: 40%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formulario>input{
+    font-size: 30px;
+    margin:3%;
+    text-align: center;
+    background-color: gray;
+    border: none;
+}
+.formulario>input::placeholder{
+    color: white;
+}
+.formulario>button{
+    font-size: 25px;
+    margin: 3%;
+    cursor: pointer;
+}
+.avatar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.avatar>div{
+    display: flex;
+    width: 100%;
+}
+.avatar>div>button{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.avatar>div>button:hover{
+    width: 55%;
+    height: 290px;
+}
+.av1{
+    background-image: url('../../../public/crearCuenta/av1.png');
+}
+.av2{
+    background-image: url('../../../public/crearCuenta/av2.png');
+}.av3{
+    background-image: url('../../../public/crearCuenta/av3.png');
+}.av4{
+    background-image: url('../../../public/crearCuenta/av4.png');
+}.av5{
+    background-image: url('../../../public/crearCuenta/av5.png');
+}.av6{
+    background-image: url('../../../public/crearCuenta/av6.png');
+}

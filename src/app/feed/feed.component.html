@@ -1,0 +1,34 @@
+<div class="cabeza" *ngIf="user">
+    <h3>FRIENDS</h3>
+    <div>
+        <a href="">INICIO</a>
+        <a href="profile">PERFIL</a>
+        <a href="">SALIR</a>
+    </div>
+</div>
+
+<div class="seccionPublicar">
+    <img src={{user.avatar}} alt="">
+    <input type="text" placeholder="QUE ESTAS PENSANDO" [(ngModel)]="texto">
+    <button (click)="onPost()">PUBLICAR</button>
+</div>
+
+<!-- <div class="card">
+<img src="crearCuenta/av2.png" alt="">
+<p type="text" name="" id="">esto es estatico aun</p>
+</div> -->
+<div class="carousel-container">
+    <div class="carousel">
+      <div class="card" *ngFor="let post of posts">
+        <img src={{post.avatar}} alt="Avatar de {{ post.avatar }}">
+        <!-- <p>{{ post.nombre }}</p> -->
+        <p>{{ post.texto }}</p>
+        <p>Publicado por: {{ post.username }}</p>
+      </div>
+    </div>
+  </div>
+
+<div class="usariosActivos" *ngFor="let user of activeUsers">
+    <img src={{user.avatar}} alt="">
+    <div class="actividad"></div>
+</div>
